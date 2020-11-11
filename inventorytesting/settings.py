@@ -75,12 +75,12 @@ WSGI_APPLICATION = 'inventorytesting.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
 #DATABASES = {
 #    'default': {
@@ -93,16 +93,16 @@ DATABASES = {
 #    }
 #}
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'heroku_09cdf26ebd76fab',
-#        'USER': 'bd6d8c0796c2de',
-#        'PASSWORD': '92ea3acd',
-#        'HOST': 'us-cdbr-east-02.cleardb.com',
-#        'PORT': '3306',
-#    }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'heroku_09cdf26ebd76fab',
+        'USER': 'bd6d8c0796c2de',
+        'PASSWORD': '92ea3acd',
+        'HOST': 'us-cdbr-east-02.cleardb.com',
+        'PORT': '3306',
+    }
+}
 
 
 # Password validation
