@@ -82,13 +82,24 @@ WSGI_APPLICATION = 'inventorytesting.wsgi.application'
 #    }
 #}
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'stockdbtest',
+#        'USER': 'root',
+#        'PASSWORD': '',
+#        'HOST': 'localhost',
+#        'PORT': '3306',
+#    }
+#}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'stockdbtest',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'heroku_09cdf26ebd76fab',
+        'USER': 'bd6d8c0796c2de',
+        'PASSWORD': '92ea3acd',
+        'HOST': 'us-cdbr-east-02.cleardb.com',
         'PORT': '3306',
     }
 }
