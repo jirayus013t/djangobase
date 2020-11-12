@@ -13,3 +13,7 @@ def contact(request):
     products = Product.objects.all()
     return render(request, 'frontend/contact.html',{'products': products} )
 
+def mplaces(request):
+    return render(request, 'frontend/mplaces.html')
+
+
