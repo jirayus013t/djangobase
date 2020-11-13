@@ -16,4 +16,11 @@ def contact(request):
 def mplaces(request):
     return render(request, 'frontend/mplaces.html')
 
+def mcreatures(request):
+    return render(request, 'frontend/mcreatures.html')
 
+def maliens(request):
+    return render(request, 'frontend/maliens.html')
+
+def time(request):
+    return render(request, 'frontend/time.html')

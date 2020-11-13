@@ -1,0 +1,83 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Top 3 Mysterious Time Travel Evidence.{% endblock %}
+{% block content %}
+<div class="jumbotron p-3 p-md-5">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Top 3 Mysterious Time Travel Evidence</h1>
+          <p class="lead my-3"> Many experts believe that time travel is the understanding of the space-time continuum and the basic laws of physics. But not all.</p>
+        </div>
+</div>
+
+  <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'mplaces' %}">Top 3 Most Myterious Places in the Entire Globe.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Planet Earth is a woudrous place with mythical origins or unexplained phenomena.</p>
+              <a href="{% url 'mplaces' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'mplaces' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/statue.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'mcreatures' %}">Top 3 Mysterious Creatures That Live In The Deep Sea</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">A majority of the creatures lurking below the surface may as well be aliens. Earth's oceans are home to some truly terrifying creatures.</p>
+              <a href="{% url 'mcreatures' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'mcreatures' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/megamouthshark.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="blog-post">
+    <hr>
+            <h2 class="blog-post-title">Number 3 : The famous "hipster time traveler"</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/hipster.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">The hipster time traveler</h5>
+                 Yet another persistent urban legend about time travel is the story about the "hipster time traveler". Sporting sunglasses and what appears to be a t-shirt and matching textured sweater, he was very out of place for a 1940s photograph. His clothes, glasses and modern looking camera might have been technically made in 1940, however, historians have said that it would be extremely unusual to see a man walking around dressed like that. 
+
+         </div>
+    </div>
+    <hr>
+      <h2 class="blog-post-title">Number 2 : The Football Stadium Incident</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/football.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">The Football Stadium Incident</h5>
+                    During the live football match a boy caught in the camera running at the abnormal speed by crossing the people standing there. It was believed as a evidence of time travel.         </div>
+    </div>
+    <hr>
+     <h2 class="blog-post-title">Number 1 : Rudolph Fentz</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/rudolph.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">Rudolph Fentz</h5>
+                  A man who had mysteriously disappeared 74 years earlier reportedly turned up in New York City in 1950 — yet he hadn't aged a day. The story tells of a 19th-century-looking young man possessing items of that period who is found confused in the middle of Times Square in the 1950s before being hit by a car and killed, suggesting that he had, perhaps involuntarily, time travelled about a century forwards.      </div>
+    </div>
+            
+    </div><!-- /.blog-post -->
+    
+
+
+    
+
+{% endblock %}

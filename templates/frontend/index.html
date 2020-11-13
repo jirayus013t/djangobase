@@ -4,11 +4,11 @@
 
 <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">The Top 10 Mysterious</h1>
-          <p class="lead text-muted">Wheather it's unsolved mysterious places, things, or even living things beside human, this page gathers all the information around the globe that contains some of articles that you might be curious about and could read it up</p>
+          <h1 class="jumbotron-heading">The Top 3 Mysterious</h1>
+          <p class="lead text-muted">Whether it's unsolved mysterious places, things, or even living things beside human, this page gathers all the information around the globe that contains some of articles that you might be curious about and could read it up</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="{% url 'about' %}" class="btn btn-primary my-2">About</a>
+            <a href="{% url 'contact' %}" class="btn btn-secondary my-2">Contact Us</a>
           </p>
         </div>
 </section>
@@ -19,9 +19,10 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              <img class="mr-3" src="./static/images/mountain.jpg" width="346" height="250" alt="Card image cap">
+              <a href="{% url 'mplaces' %}">
+              <img class="mr-3" src="./static/images/statue.jpg" width="346" height="250" alt="Card image cap"></a>
                 <div class="card-body">
-                  <p class="card-text">Top 10 Most Myterious Places in the Entire Globe. Planet Earth is a woudrous place with mythical origins or unexplained phenomena</p>
+                  <p class="card-text">Top 3 Most Myterious Places in the Entire Globe. Planet Earth is a woudrous place with mythical origins or unexplained phenomena</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'mplaces' %}">View </a></button>
@@ -33,12 +34,13 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              <img class="mr-3" src="./static/images/mountain.jpg" width="346" height="250" alt="Card image cap">
+              <a href="{% url 'mcreatures' %}">
+              <img class="mr-3" src="./static/images/megamouthshark.jpg" width="346" height="250" alt="Card image cap"></a>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Top 3 Mysterious Creatures That Live In The Deep Sea. A majority of the creatures lurking below the surface may as well be aliens. Earth's oceans are home to some truly terrifying creatures. </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'about' %}">View </a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'mcreatures' %}">View </a></button>
                     </div>
                     <small class="text-muted">Estimated read time  (5 mins)</small>
                   </div>
@@ -47,12 +49,13 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              <img class="mr-3" src="./static/images/mountain.jpg" width="346" height="250" alt="Card image cap">
+              <a href="{% url 'maliens' %}">
+              <img class="mr-3" src="./static/images/phoenixlight.jpg" width="346" height="250" alt="Card image cap"></a>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"> Top 3 UFO and Alien Mysteries. Alien abductions, Mysterious lights in the sky, or even a strange events of extra terrestrials. Get the facts about the top three UFO and alien mysteries of all time.  </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'about' %}">View </a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'maliens' %}">View </a></button>
                     </div>
                     <small class="text-muted">Estimated read time  (5 mins)</small>
                   </div>
@@ -62,12 +65,13 @@
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              <img class="mr-3" src="./static/images/mountain.jpg" width="346" height="250" alt="Card image cap">
+              <a href="{% url 'time' %}">
+              <img class="mr-3" src="./static/images/hipster.jpg" width="346" height="250" alt="Card image cap"></a>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Top 3 Mysterious Time Travel Evidence. Many experts believe that time travel is the understanding of the space-time continuum and the basic laws of physics. But not all.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'about' %}">View </a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'time' %}">View </a></button>
                     </div>
                     <small class="text-muted">Estimated read time  (5 mins)</small>
                   </div>
@@ -76,28 +80,28 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              <img class="mr-3" src="./static/images/mountain.jpg" width="346" height="250" alt="Card image cap">
+              <img class="mr-3" src="./static/images/ghostship.jpg" width="346" height="250" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Top 3 Mysterious Ghost Ships and Haunted Stories of the Maritime World. Mystery, fear, enigma encompass the seafaring ghost ships tales that has been passed around throughout centuries by sailors. </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'about' %}">View </a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" >Comming soon </a></button>
                     </div>
-                    <small class="text-muted">Estimated read time  (5 mins)</small>
+                    <small class="text-muted">(Not available at this time)</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              <img class="mr-3" src="./static/images/mountain.jpg" width="346" height="250" alt="Card image cap">
+              <img class="mr-3" src="./static/images/extincthuman.jpg" width="346" height="250" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"> Top 3 Mysterious Extinct Human Species. as the science of archaeology has progressed and more findings have been made it has become clear that the homo genus was once lived with different species. </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" href="{% url 'about' %}">View </a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a class="nav-link" style="color:gray" >Comming soon </a></button>
                     </div>
-                    <small class="text-muted">Estimated read time  (5 mins)</small>
+                    <small class="text-muted">(Not available at this time)</small>
                   </div>
                 </div>
               </div>

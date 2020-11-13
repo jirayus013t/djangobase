@@ -1,9 +1,9 @@
 {% extends 'frontend/base.html' %}
-{% block title %} Top 10 Mysterious Places {% endblock %}
+{% block title %} Top 3 Mysterious Places {% endblock %}
 {% block content %}
 <div class="jumbotron p-3 p-md-5">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Top 10 Most Myterious Places in the Entire Globe</h1>
+          <h1 class="display-4 font-italic">Top 3 Most Myterious Places in the Entire Globe</h1>
           <p class="lead my-3">Planet Earth is a woudrous place with mythical origins or unexplained phenomena.</p>
         </div>
 </div>
@@ -12,29 +12,31 @@
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Featured post</a>
+                <a class="text-dark" href="{% url 'mcreatures' %}">Top 3 Mysterious Creatures That Live In The Deep Sea</a>
               </h3>
               <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#">Continue reading</a>
+              <p class="card-text mb-auto">A majority of the creatures lurking below the surface may as well be aliens. Earth's oceans are home to some truly terrifying creatures.</p>
+              <a href="{% url 'mcreatures' %}">Continue reading</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/mountain.jpg" width="346" height="250" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+            <a href="{% url 'mcreatures' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/megamouthshark.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Featured post</a>
+                <a class="text-dark" href="{% url 'maliens' %}"> Top 3 UFO and Alien Mysteries.</a>
               </h3>
               <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#">Continue reading</a>
+              <p class="card-text mb-auto"> Mysterious lights in the sky, or even a strange events of extra terrestrials. Get the facts about the top three UFO and alien mysteries of all time.</p>
+              <a href="{% url 'maliens' %}">Continue reading</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/mountain.jpg" width="346" height="250" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+            <a href="{% url 'maliens' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/phoenixlight.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
           </div>
         </div>
       </div>
@@ -42,14 +44,32 @@
     <br>
     <br>
     <div class="blog-post">
-            <h2 class="blog-post-title">Number 10 : Area 51 (Nevada)</h2>
+    <hr>
+            <h2 class="blog-post-title">Number 3 : Area 51 (Nevada)</h2>
             <hr>
             <div class="media">
                 <img class="mr-3" src="./static/images/area51.jpg" width="320" height="280" alt="Generic placeholder image">
             <div class="media-body">
-                <h5 class="mt-0">Media heading</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </div>
+                <h5 class="mt-0">Area 51 in Nevada</h5>
+                 Area does indeed exist now (officially now). It's a part of an active military base which patrolled and guarded by some of the heaviest security on Earth. If you find yourself close by, you can see all posted signs and can't even trespassing. Nevada Test and Training Range, has captured the imagination of both conspiracy theorists and Hollywood for decades. There are rumors about staged moonlanding and UFOs aliens.            </div>
+    </div>
+    <hr>
+      <h2 class="blog-post-title">Number 2 : Easter Island (Chile)</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/statue.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">Easter Island in Chile</h5>
+                  Culture, adventure and a paradise destination to rest are just a part of what awaits you on Rapa Nui (Easter Island). Come discover its intriguing moai and the authentic spirit of this culture still present in its people! which erected almost 1,000 giant stone statues known as moai approximately 900 years ago. No one knows for sure why the ancient Polynesians carved and placed the statues across the island, though one recent theory hypothesizes that they were placed as markers of freshwater sources.           </div>
+    </div>
+    <hr>
+     <h2 class="blog-post-title">Number 1 : The Great Pyramid of Giza (Egypt)</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/pyramid.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">The Great Pyramid of Giza</h5>
+                  The Great Pyramid of Giza is a defining symbol of Egypt and the last of the ancient Seven Wonders of the World. It is located on the Giza plateau near the modern city of Cairo and was built over a twenty-year period during the reign of the king Khufu (2589-2566 BCE, also known as Cheops) of the 4th Dynasty. The only one of the seven wonders of the ancient world that’s still intact, it continues to be one of the most visited tourist attractions on Earth.           </div>
     </div>
             
     </div><!-- /.blog-post -->

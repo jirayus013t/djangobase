@@ -1,0 +1,81 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Top 3 UFO and Alien Mysteries{% endblock %}
+{% block content %}
+<div class="jumbotron p-3 p-md-5">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Top 3 UFO and Alien Mysteries</h1>
+          <p class="lead my-3"> Alien abductions, Mysterious lights in the sky, or even a strange events of extra terrestrials. Get the facts about the top three UFO and alien mysteries of all time.</p>
+        </div>
+</div>
+
+  <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'time' %}">Top 3 Mysterious Time Travel Evidence.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Many experts believe that time travel is the understanding of the space-time continuum and the basic laws of physics. But not all.</p>
+              <a href="{% url 'time' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'time' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/hipster.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'mplaces' %}">Top 3 Most Myterious Places in the Entire Globe.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Planet Earth is a woudrous place with mythical origins or unexplained phenomena.</p>
+              <a href="{% url 'mplaces' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'mplaces' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/statue.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="blog-post">
+    <hr>
+            <h2 class="blog-post-title">Number 3 : The Loch Ness Monster (565 AD)</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/lochness.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">The Loch Ness Monster (565 AD)</h5>
+                Nessie is the fabled creature that famously inhabits Loch Ness in Scotland. This monster might well be the oldest of the unexplained mysteries. the modern legend of the Loch Ness Monster is born when a sighting makes local news on May 2, 1933. That's not to say Nessie doesn't exist, of course - it's not easy to prove a negative. But if you're looking for proof, you're just going to have to keep looking.          </div>
+    </div>
+    <hr>
+      <h2 class="blog-post-title">Number 2 : The Babushka Lady (1963)</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/babushkalady.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">The Babushka Lady (1963)</h5>
+                    In 1963, President John F. Kennedy was assassinated while riding in his motorcade in Dallas, Texas. Many conspiracy theories and wild claims have centred around the events of that day. As seen in the following picture, the unknown woman was captured at the scene, pointing a camera directly at the president's car, sparking speculation that she could hold the truth to what happened. Despite this, the woman apparently never came forward and the images from her camera have never been seen.          </div>
+    </div>
+    <hr>
+     <h2 class="blog-post-title">Number 1 : The Phoenix Lights (1997)</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/phoenixlight.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">The Phoenix Lights (1997)</h5>
+                  It is the most famous so-called UFO sighting in the world. "The Phoenix Lights" captured the world's attention 17 years ago on March 13, 1997. thousands of people reported seeing lights above them in the skies over a 300-mile range through the American Southwest. Witnesses named Sue Watson believe they saw something else. "Evidently what we saw that night was one of the biggest reported UFOs ever," she said. She said that night they all watched an enormous black aircraft cruise slow and low over Camelback Mountain headed south. "It was like a [shopping] mall flying over my home," she said of the craft, described by multiple witnesses as being over a mile wide.      </div>
+    </div>
+            
+    </div><!-- /.blog-post -->
+    
+
+
+    
+
+{% endblock %}

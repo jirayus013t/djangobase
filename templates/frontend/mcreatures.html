@@ -1,0 +1,81 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Top 3 Mysterious Creatures That Live In The Deep Sea{% endblock %}
+{% block content %}
+<div class="jumbotron p-3 p-md-5">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Top 3 Mysterious Creatures That Live In The Deep Sea</h1>
+          <p class="lead my-3">A majority of the creatures lurking below the surface may as well be aliens. Earth's oceans are home to some truly terrifying creatures.</p>
+        </div>
+</div>
+
+  <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'mplaces' %}">Top 3 Most Myterious Places in the Entire Globe.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Planet Earth is a woudrous place with mythical origins or unexplained phenomena.</p>
+              <a href="{% url 'mplaces' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'mplaces' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/statue.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'maliens' %}">Top 3 UFO and Alien Mysteries.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Alien abductions, Mysterious lights in the sky, or even a strange events of extra terrestrials. Get the facts about the top three UFO and alien mysteries of all time.</p>
+              <a href="{% url 'maliens' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'maliens' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/phoenixlight.jpg" width="346" height="270" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="blog-post">
+    <hr>
+            <h2 class="blog-post-title">Number 3 : Giant isopod (Bathynomus giganteus)</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/giantisopod.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">Giant isopod</h5>
+                 Giant isopods are related to pill bugs, and they can grow up to 20 inches long. They are scary looking but still come across as humorous for some odd reason.they all have two pairs of antennae, compound eyes, and four sets of jaws. Their seven-segmented bodies have seven sets of legs for walking. The giant isopod can swim shockingly fast and is known for its voracious appetite. In fact, it's most happy when dining on the carcasses of animals that have sunk to the bottom of the sea!             </div>
+    </div>
+    <hr>
+      <h2 class="blog-post-title">Number 2 : Eerie Anglerfish</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/angerfish.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">Eerie Anglerfish</h5>
+                   The terrifyingly toothy anglerfish became a common occurrence in little kids' nightmares ever since it chased Nemo and Dory in Pixar's "Finding Nemo." Few wonders of the sunless depths appear quite so ghoulish or improbable as anglerfish, creatures that dangle bioluminescent lures in front of needlelike teeth.Deep sea anglerfish are not eaten by people, and there is no evidence to suggest that people have any negative affects on their populations. They are likely naturally rare.          </div>
+    </div>
+    <hr>
+     <h2 class="blog-post-title">Number 1 : Monstrous Megamouth Shark</h2>
+            <hr>
+            <div class="media">
+                <img class="mr-3" src="./static/images/megamouthshark.jpg" width="320" height="280" alt="Generic placeholder image">
+            <div class="media-body">
+                <h5 class="mt-0">Monstrous Megamouth Shark</h5>
+                  The megamouth shark is an extremely rare species of deepwater shark. reaching weights of 2700 pounds (1215 kg). scientists believe megamouth sharks only come near the surface at night and spend most of their lives in the dark. Though it is one of the largest sharks in the world, the megamouth shark was only discovered by scientists in 1976. Even large species may go undiscovered in the large deep sea. Though it is one of the largest sharks in the world, the megamouth shark was only discovered by scientists in 1976. Even large species may go undiscovered in the large deep sea.         </div>
+    </div>
+            
+    </div><!-- /.blog-post -->
+    
+
+
+    
+
+{% endblock %}

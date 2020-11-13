@@ -2,14 +2,15 @@
 {% block title %} About {% endblock %}
 {% block content %}
 <div class="jumbotron">
-    <h1 class="display-3">The Top 10 Mysterious </h1>
+    <h1 class="display-3">The Top 3 Mysterious </h1>
     <p class="lead">New Version Pushed</p>
     <hr class="my-2">
-    <p>More info</p>
+    <p>This site gather all the interesting mythical things around the world and categorize them into various categories. The intention of this site is to help you find more information and we have gathered all of the significant evidences whether it's an unnatural incident or even unsolved mysteries to fullfill your curiosity up. </p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'index' %}" role="button">Go to main page</a>
     </p>
 </div>
+
 
 
 <div class="container">
@@ -17,24 +18,24 @@
     <div class="col-sm">
       <div class="media">
          <div class="media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">Curiosity</h5>
+            If you have been curious in something whether it's an unsolved mystery or an odd incidents, then this site gladly to become your assistance. "Curiosity is one of the most permanent and certain characteristics of a vigorous intellect". -Samuel Johnson
              </div>
       </div>
     </div>
     <div class="col-sm">
       <div class="media">
          <div class="media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">Mystery</h5>
+            Mysterious, inscrutable, mystical, obscure refer to that which is not easily comprehended or explained. That which is mysterious, by being unknown or puzzling, excites curiosity, amazement, or a mysterious disease.
              </div>
       </div>
     </div>
     <div class="col-sm">
       <div class="media">
          <div class="media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">Knowledge</h5>
+             understanding of or information about a subject that you get by experience or study, either known by one person or by people generally. "Knowledge is a commodity to be shared. It should not remain the monopoly of the selected few". -Moustasem Algharati
              </div>
       </div>
     </div>
@@ -54,12 +55,38 @@
 
 <br><br>
 
-<div class="media">
-  <img class="mr-3" src="./static/images/mountain.jpg" width="320" height="280" alt="Generic placeholder image">
-  <div class="media-body">
-    <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-  </div>
-</div>
+  <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'time' %}">Top 3 Mysterious Time Travel Evidence.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Many experts believe that time travel is the understanding of the space-time continuum and the basic laws of physics. But not all.</p>
+              <a href="{% url 'time' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'time' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/hipster.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">You might be interested in</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{% url 'mplaces' %}">Top 3 Most Myterious Places in the Entire Globe.</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Planet Earth is a woudrous place with mythical origins or unexplained phenomena.</p>
+              <a href="{% url 'mplaces' %}">Continue reading</a>
+            </div>
+            <a href="{% url 'mplaces' %}">
+            <img class="card-img-right flex-auto d-none d-md-block" src="./static/images/statue.jpg" width="346" height="262" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 {% endblock %}
