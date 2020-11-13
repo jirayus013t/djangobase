@@ -93,27 +93,27 @@ WSGI_APPLICATION = 'inventorytesting.wsgi.application'
 #    }
 #}
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'heroku_09cdf26ebd76fab',
-#        'USER': 'bd6d8c0796c2de',
-#        'PASSWORD': '92ea3acd',
-#        'HOST': 'us-cdbr-east-02.cleardb.com',
-#        'PORT': '3306',
-#    }
-#}
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_46681de7d4c4008',
-        'USER': 'bcac2aabaef49f',
-        'PASSWORD': 'f3dbf400',
+        'NAME': 'heroku_09cdf26ebd76fab',
+        'USER': 'bd6d8c0796c2de',
+        'PASSWORD': '92ea3acd',
         'HOST': 'us-cdbr-east-02.cleardb.com',
         'PORT': '3306',
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'heroku_46681de7d4c4008',
+#        'USER': 'bcac2aabaef49f',
+#        'PASSWORD': 'f3dbf400',
+#        'HOST': 'us-cdbr-east-02.cleardb.com',
+#        'PORT': '3306',
+#    }
+#}
 
 
 # Password validation
